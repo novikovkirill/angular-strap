@@ -1,0 +1,73 @@
+{
+  "name": "angular-strap",
+  "description": "AngularStrap - AngularJS directives for Bootstrap",
+  "version": "2.0.5",
+  "keywords": [
+    "angular",
+    "bootstrap"
+  ],
+  "homepage": "http://mgcrea.github.io/angular-strap",
+  "bugs": {
+    "url": "https://github.com/mgcrea/angular-strap/issues"
+  },
+  "author": {
+    "name": "Olivier Louvignes",
+    "email": "olivier@mg-crea.com",
+    "url": "https://github.com/mgcrea"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgcrea/angular-strap.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mgcrea/angular-strap/blob/master/LICENSE.md"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "chalk": "^0.5.1",
+    "codeclimate-test-reporter": "0.0.3",
+    "gulp": "^3.8.6",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-changed": "^0.4.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-cleancss": "^0.2.2",
+    "gulp-concat-util": "^0.2.3",
+    "gulp-connect": "^2.0.6",
+    "gulp-coveralls": "^0.1.2",
+    "gulp-htmlmin": "^0.1.3",
+    "gulp-jshint": "^1.7.1",
+    "gulp-less": "^1.3.2",
+    "gulp-nginclude": "^0.4.5",
+    "gulp-ngmin": "^0.3.0",
+    "gulp-ngtemplate": "^0.2.3",
+    "gulp-open": "^0.2.8",
+    "gulp-rename": "^1.2.0",
+    "gulp-sourcemaps": "^1.1.0",
+    "gulp-uglify": "^0.3.1",
+    "gulp-usemin": "^0.3.7",
+    "gulp-util": "^3.0.0",
+    "gulp-watch": "^0.6.8",
+    "jshint-stylish": "^0.4.0",
+    "karma": "^0.12.17",
+    "karma-coverage": "^0.2.4",
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "merge-stream": "^0.1.5",
+    "run-sequence": "^0.3.6"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "gulp jshint karma:unit"
+  },
+  "readme": "# [AngularStrap](http://mgcrea.github.io/angular-strap) [![Build Status](https://secure.travis-ci.org/mgcrea/angular-strap.svg?branch=master)](http://travis-ci.org/mgcrea/angular-strap) [![devDependency Status](https://david-dm.org/mgcrea/angular-strap/dev-status.svg)](https://david-dm.org/mgcrea/angular-strap#info=devDependencies) [![Coverage Status](https://coveralls.io/repos/mgcrea/angular-strap/badge.png?branch=master)](https://coveralls.io/r/mgcrea/angular-strap?branch=master)\n\n[![Banner](http://mgcrea.github.io/angular-strap/images/snippet.png)](http://mgcrea.github.io/angular-strap)\n\nAngularStrap is a set of native directives that enables seamless integration of [Bootstrap 3.0+](https://github.com/twbs/bootstrap) into your [AngularJS 1.2+](https://github.com/angular/angular.js) app.\n\n- The only required dependency is [Bootstrap CSS Styles](https://github.com/twbs/bootstrap/blob/master/dist/css/bootstrap.css)!\n\n>\nAngularStrap was initially written to provide AngularJS wrapping directives for Bootstrap. It used to leverage the JavaScript code written by Bootstrap's contributors to minimize work, retro-compatibility issues & time to market.\n>\nWhile it worked pretty well, it required a big JavaScript payload: both jQuery & Bootstrap libraries. When the 1.2 release of AngularJS showed up with the ngAnimate module, greatly simplifying DOM manipulation, we knew it was time for a rewrite!\n\n- If you don't want to use `ngAnimate`, you will have to include a tiny [ngAnimate mock](https://github.com/mgcrea/angular-strap/wiki/ngAnimate-mock).\n\n## Documentation and examples\n\n+ Check the [documentation](http://mgcrea.github.io/angular-strap) and [changelog](https://github.com/mgcrea/angular-strap/releases).\n\n\n\n## Quick start\n\n+ Include the required libraries:\n\n>\n``` html\n<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js\"></script>\n<script src=\"//oss.maxcdn.com/angular.strap/2.0.0/angular-strap.min.js\"></script>\n<script src=\"//oss.maxcdn.com/angular.strap/2.0.0/angular-strap.tpl.min.js\"></script>\n```\n\n+ Inject the `ngStrap` module into your app:\n\n>\n``` JavaScript\nangular.module('myApp', ['mgcrea.ngStrap']);\n```\n\n\n## Developers\n\nClone the repo, `git clone git://github.com/mgcrea/angular-strap.git`, [download the latest release](https://github.com/mgcrea/angular-strap/zipball/master) or install with bower `bower install angular-strap --save`.\n\nAngularStrap is tested with `karma` against the latest stable release of AngularJS.\n\n>\n\t$ npm install --dev\n\t$ gulp test\n\nYou can build the latest version using `gulp`.\n\n>\n\t$ gulp build\n\nYou can quickly hack around (the docs) with:\n\n>\n\t$ gulp serve\n\n\n\n## Contributing\n\nPlease submit all pull requests the against master branch. If your unit test contains JavaScript patches or features, you should include relevant unit tests. Thanks!\n\n\n\n## Authors\n\n**Olivier Louvignes**\n\n+ http://olouv.com\n+ http://github.com/mgcrea\n\n\n\n## Copyright and license\n\n\tThe MIT License\n\n\tCopyright (c) 2012 - 2014 Olivier Louvignes\n\n\tPermission is hereby granted, free of charge, to any person obtaining a copy\n\tof this software and associated documentation files (the \"Software\"), to deal\n\tin the Software without restriction, including without limitation the rights\n\tto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n\tcopies of the Software, and to permit persons to whom the Software is\n\tfurnished to do so, subject to the following conditions:\n\n\tThe above copyright notice and this permission notice shall be included in\n\tall copies or substantial portions of the Software.\n\n\tTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n\tIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n\tFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n\tAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n\tLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n\tOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n\tTHE SOFTWARE.\n",
+  "readmeFilename": "README.md",
+  "_id": "angular-strap@2.0.5",
+  "_shasum": "b18768f054b535ec752cf44a34ba071a603d1de1",
+  "_resolved": "https://github.com/mgcrea/angular-strap/tarball/v2.0.5",
+  "_from": "https://github.com/mgcrea/angular-strap/tarball/v2.0.5"
+}
